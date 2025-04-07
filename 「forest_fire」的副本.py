@@ -52,19 +52,9 @@ import PIL.Image
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-train_dir = '/path/to/train_dir'
-img_height = 150
-img_width = 150
-
-train_datagen = ImageDataGenerator(rescale=1./255)
-train_data = train_datagen.flow_from_directory(
-    train_dir,
-    target_size=(img_height, img_width),
-    batch_size=32,
-    class_mode='binary'  # or 'categorical' depending on your case
-)
-val_dir = '/kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/train'
-test_dir = '/kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/val'
+train_dir='kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/train'
+val_dir = '/kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/val'
+test_dir = '/kaggle/input/the-wildfire-dataset/the_wildfire_dataset_2n_version/test'
 
 img_height, img_width = 224, 224
 batch_size = 32
