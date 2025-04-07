@@ -12,7 +12,7 @@ Original file is located at
 # NOTE: THIS NOTEBOOK ENVIRONMENT DIFFERS FROM KAGGLE'S PYTHON
 # ENVIRONMENT SO THERE MAY BE MISSING LIBRARIES USED BY YOUR
 # NOTEBOOK.
-pip install kagglehub
+
 import kagglehub
 elmadafri_the_wildfire_dataset_path = kagglehub.dataset_download('elmadafri/the-wildfire-dataset')
 
