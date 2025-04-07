@@ -106,7 +106,7 @@ print(f'Test Accuracy: {acc*100:.2f}%')
 
 model.save('forest_fire_detector.h5')
 
-!pip install streamlit
+
 import streamlit as st
 
 #Load your trained model
