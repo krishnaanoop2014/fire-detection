@@ -15,6 +15,7 @@ Original file is located at
 
 import kagglehub
 elmadafri_the_wildfire_dataset_path = kagglehub.dataset_download('elmadafri/the-wildfire-dataset')
+elmadafri_the_wildfire_dataset_path = kagglehub.dataset_download('elmadafri/the-wildfire-dataset', force_download=True)
 
 print('Data source import complete.')
 
